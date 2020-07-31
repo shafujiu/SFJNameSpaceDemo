@@ -15,6 +15,7 @@
 		819A4ADD24D1C282007ABCF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819A4ADB24D1C282007ABCF4 /* LaunchScreen.storyboard */; };
 		819A4B0124D1C625007ABCF4 /* SFJWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A4B0024D1C625007ABCF4 /* SFJWrapper.swift */; };
 		819A4B0324D1CB17007ABCF4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A4B0224D1CB17007ABCF4 /* UIImage+Extension.swift */; };
+		81A33D8E24D3EA1000F27796 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A33D8D24D3EA1000F27796 /* CircleProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		819A4AEE24D1C282007ABCF4 /* SFJNameSpaceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFJNameSpaceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		819A4B0024D1C625007ABCF4 /* SFJWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFJWrapper.swift; sourceTree = "<group>"; };
 		819A4B0224D1CB17007ABCF4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		81A33D8D24D3EA1000F27796 /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		819A4ACF24D1C27E007ABCF4 /* SFJNameSpaceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				81A33D8C24D3E9F400F27796 /* SFJKit */,
 				819A4AD024D1C27E007ABCF4 /* AppDelegate.swift */,
 				819A4AD224D1C27E007ABCF4 /* SceneDelegate.swift */,
 				819A4AD424D1C27E007ABCF4 /* ViewController.swift */,
@@ -106,6 +109,14 @@
 				819A4B0224D1CB17007ABCF4 /* UIImage+Extension.swift */,
 			);
 			path = SFJNameSpaceDemo;
+			sourceTree = "<group>";
+		};
+		81A33D8C24D3E9F400F27796 /* SFJKit */ = {
+			isa = PBXGroup;
+			children = (
+				81A33D8D24D3EA1000F27796 /* CircleProgressView.swift */,
+			);
+			path = SFJKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 				819A4B0324D1CB17007ABCF4 /* UIImage+Extension.swift in Sources */,
 				819A4AD324D1C27E007ABCF4 /* SceneDelegate.swift in Sources */,
 				819A4B0124D1C625007ABCF4 /* SFJWrapper.swift in Sources */,
+				81A33D8E24D3EA1000F27796 /* CircleProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

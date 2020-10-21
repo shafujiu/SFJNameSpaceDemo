@@ -15,21 +15,19 @@ public struct SFJWrapper<Base> {
     }
 }
 // 为对象添加 sfj
-public protocol SFJCompatible: AnyObject { }
+public protocol SFJCompatible { }
 // 为值类型添加 sfj
-public protocol SFJCompatibleValue {}
 
 extension SFJCompatible {
     public var sfj: SFJWrapper<Self> {
         get {return SFJWrapper(self)}
         set {}
     }
-}
-
-extension SFJCompatibleValue {
-    public var sfj: SFJWrapper<Self> {
-        get {return SFJWrapper(self)}
+    
+    public static var sfj: SFJWrapper<Self> {
+        get {SFJWrapper(self)}
         set {}
     }
 }
+
 

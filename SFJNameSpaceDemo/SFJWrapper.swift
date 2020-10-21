@@ -24,8 +24,8 @@ extension SFJCompatible {
         set {}
     }
     
-    public static var sfj: SFJWrapper<Self> {
-        get {SFJWrapper(self)}
+    public static var sfj: SFJWrapper<Self>.Type {
+        get { SFJWrapper<Self>.self}
         set {}
     }
 }

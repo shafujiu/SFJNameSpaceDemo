@@ -66,5 +66,21 @@ let cropImg = image?.sfj.crop(rect: .zero)
 
 
 
+# 通过泛型约束UITableVIew，UICollectionView cell 的注册，以及创建
 
+安全约束，不会因为String写错 导致错误，同时也简洁了不少；UICollectionView跟下面的差不多就没有再罗列
 
+```Swift
+func registerClass<T: UITableViewCell>(_ cellType: T.Type, reuseIdentifier: String = T.reuseIdentifier) {
+    register(cellType, forCellReuseIdentifier: reuseIdentifier)
+}
+
+func registerNib<T: UITableViewCell>(_ cellType: T.Type, reuseIdentifier: String = T.reuseIdentifier) {
+    register(UINib(nibName: cellType.reuseIdentifier, bundle: nil), forCellReuseIdentifier: reuseIdentifier)
+}
+
+func dequeueReusableCellClass<T: UITableViewCell>(for indexPath: IndexPath, reuseIdentifier: String = T.reuseIdentifier) -> T {
+    (dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? T)!
+}
+```
+- [学习了  CollectionViewPagingLayout](https://github.com/amirdew/CollectionViewPagingLayout)

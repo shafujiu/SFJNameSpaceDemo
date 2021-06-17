@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81404EC8267BA554009EA0F6 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81404EC7267BA554009EA0F6 /* UICollectionView+.swift */; };
+		81404ECA267BA966009EA0F6 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81404EC9267BA966009EA0F6 /* UITableView+.swift */; };
 		819A4AD124D1C27E007ABCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A4AD024D1C27E007ABCF4 /* AppDelegate.swift */; };
 		819A4AD324D1C27E007ABCF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A4AD224D1C27E007ABCF4 /* SceneDelegate.swift */; };
 		819A4AD524D1C27E007ABCF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A4AD424D1C27E007ABCF4 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81404EC7267BA554009EA0F6 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		81404EC9267BA966009EA0F6 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		819A4ACD24D1C27E007ABCF4 /* SFJNameSpaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFJNameSpaceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819A4AD024D1C27E007ABCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		819A4AD224D1C27E007ABCF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81404EC6267BA524009EA0F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81404EC7267BA554009EA0F6 /* UICollectionView+.swift */,
+				81404EC9267BA966009EA0F6 /* UITableView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		819A4AC424D1C27D007ABCF4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		819A4ACF24D1C27E007ABCF4 /* SFJNameSpaceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				81404EC6267BA524009EA0F6 /* Extension */,
 				81A33D8C24D3E9F400F27796 /* SFJKit */,
 				819A4AD024D1C27E007ABCF4 /* AppDelegate.swift */,
 				819A4AD224D1C27E007ABCF4 /* SceneDelegate.swift */,
@@ -251,10 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				819A4AD524D1C27E007ABCF4 /* ViewController.swift in Sources */,
+				81404ECA267BA966009EA0F6 /* UITableView+.swift in Sources */,
 				819A4AD124D1C27E007ABCF4 /* AppDelegate.swift in Sources */,
 				819A4B0324D1CB17007ABCF4 /* UIImage+Extension.swift in Sources */,
 				819A4AD324D1C27E007ABCF4 /* SceneDelegate.swift in Sources */,
 				819A4B0124D1C625007ABCF4 /* SFJWrapper.swift in Sources */,
+				81404EC8267BA554009EA0F6 /* UICollectionView+.swift in Sources */,
 				81A33D8E24D3EA1000F27796 /* CircleProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
